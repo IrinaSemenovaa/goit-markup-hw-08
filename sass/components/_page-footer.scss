@@ -1,0 +1,25 @@
+.page-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  
+    background-color: $secondary-background-color;
+  }
+  .page-footer__section {
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-around;
+    }
+    @include desktop {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+    }
+  }
+  .page-footer__block {
+    text-align: center;
+    @include desktop {
+      text-align: start;
+    }
+  }

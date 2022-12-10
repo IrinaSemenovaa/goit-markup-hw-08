@@ -1,0 +1,62 @@
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $title-text-color;
+  }
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    }
+  }
+  .page-body {
+    color: $primary-text-color;
+    background: $background-color;
+  
+    font-family: Roboto, sans-serif;
+    padding-top: 0;
+  }
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: 0 15px;
+
+  @include mobile {
+      width: 480px;
+    }
+  @include tablet {
+      width: 768px;
+    }
+  @include desktop {
+      width: 1200px;
+    }
+  }
+    .container__title {
+      margin-bottom: 30px;
+      margin-top: 0;
+  
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 1.18;
+      text-align: center;
+      letter-spacing: 0.03em;
+    }
+
+
+    // width: calc((100% - кол-во маржинов в строке * значение маржина) / кол-во э-в в строке;

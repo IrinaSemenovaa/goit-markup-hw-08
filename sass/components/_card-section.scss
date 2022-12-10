@@ -1,0 +1,91 @@
+.section__card {
+    background-color: $light-backgroung-color;
+  }
+  .section-card__items {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+  
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+      }
+    @include desktop {
+    display: flex;
+    text-align: center;
+    gap: 30px;
+  }
+}
+  .section-card__userpic {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  .section-card__item {
+    background-color: $white-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    
+    @include tablet {
+        width: calc((100% - 30px)/2);
+      }
+    @include desktop {
+      width: calc((100% - 90px) / 4);
+    }
+  }
+  .section-card__meta {
+    text-align: center;
+    padding-bottom: 24px;
+    padding-top: 24px;
+
+    @include tablet {
+      padding: 30px 74px 24px 74px;
+    }
+    @include desktop {
+      padding: 30px 32px 30px 32px;
+        }
+  }
+  .section-card__title {
+    margin: 0;
+    margin-bottom: 10px;;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+  }
+  .section-card__text {
+    margin: 0;
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+  }
+  .socials {
+    @include centeredFlex;
+    max-width: 206px;
+    max-height: 44px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .socials__item:not(:last-child) {
+    margin-right: 10px;
+  }
+  .socials__link {
+    @include centeredFlex;
+    width: 44px;
+    height: 44px;
+
+    fill: $primary-icon-color;
+    border-radius: 50%;
+    background-position: 50% 50%;
+  
+    transition: background-color 250ms $timing-function,
+    fill 250ms $timing-function;
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+      fill: $white-color;
+    }
+  }

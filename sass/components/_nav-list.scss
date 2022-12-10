@@ -1,0 +1,64 @@
+.nav-list {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 306px;
+  }
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 49px;
+    gap: 50px;
+
+    color: $title-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    @include desktop {
+      justify-content: flex-start;
+      margin-left: 93px;
+      margin-right: 268px;
+    }
+  }
+}
+
+.nav-list__item {
+  position: relative;
+}
+.nav-list__link {
+  @media screen and (max-width: 767px) {
+  padding: 0;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: $title-text-color;
+  }
+  @include tablet {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    @include transition;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+}
+.nav-list__link--current {
+  color: $accent-color;
+  @include tablet {
+    &::after {
+      @include pseudo;
+      bottom: -1px;
+      right: 0;
+      width: 100%;
+      height: 4px;
+      background-color: $accent-color;
+      border-radius: 2px;
+    }
+  }
+}
