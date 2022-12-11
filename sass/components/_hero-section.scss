@@ -12,7 +12,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../../images/hero480.jpg);
+    url(../images/hero480.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -23,7 +23,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/hero768.jpg);
+      url(../images/hero768.jpg);
   }
   @include desktop {
     max-width: 1600px;
@@ -36,7 +36,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/hero1600.jpg);
+      url(../images/hero1600.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
@@ -48,7 +48,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/hero1600@2x.jpg);
+      url(../images/hero1600@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
@@ -60,7 +60,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/hero768@2x.jpg);
+      url(../images/hero768@2x.jpg);
   }
 }
 @media screen and (min-width: 250px) and (min-device-pixel-ratio: 2),
@@ -72,7 +72,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/hero480@2x.jpg);
+      url(../images/hero480@2x.jpg);
   }
 }
 .hero-section__title {
