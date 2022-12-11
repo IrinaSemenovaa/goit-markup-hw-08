@@ -1,9 +1,9 @@
 .feedback-items {
   @media screen and (max-width: 767px) {
-  display: flex;
-  flex-direction: column-reverse;
-  margin-bottom: 64px;
-  gap: 32px;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 64px;
+    gap: 32px;
   }
   @include tablet {
     display: flex;
@@ -17,13 +17,19 @@
   }
 }
 .feedback-items__item {
-   @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     &:last-child {
       color: $accent-color;
     }
-   }
+  }
 }
 .feedback-items__link {
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    fill: currentColor;
+  }
+  @include transition;
   @media screen and (max-width: 767px) {
     font-weight: 500;
     font-size: 34px;
@@ -44,14 +50,6 @@
     @include desktop {
       padding-top: 32px;
       padding-bottom: 32px;
-    }
-
-    @include transition;
-
-    &:hover,
-    &:focus {
-      color: $accent-color;
-      fill: currentColor;
     }
   }
 }

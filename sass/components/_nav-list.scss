@@ -28,13 +28,17 @@
   position: relative;
 }
 .nav-list__link {
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
   @media screen and (max-width: 767px) {
-  padding: 0;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-  color: $title-text-color;
+    padding: 0;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: $title-text-color;
   }
   @include tablet {
     display: block;
@@ -42,15 +46,11 @@
     padding-bottom: 32px;
 
     @include transition;
-    &:hover,
-    &:focus {
-      color: $accent-color;
-    }
   }
 }
 .nav-list__link--current {
-  color: $accent-color;
   @include tablet {
+    color: $accent-color;
     &::after {
       @include pseudo;
       bottom: -1px;

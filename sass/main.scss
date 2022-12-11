@@ -1,21 +1,38 @@
+// -----------------------------------------Базові стилі
 @import './utils/variables';
 @import './utils/mixins';
 @import './utils/global';
 @import './utils/placeholder';
+
+// ----------------------------------------Шапка сторінки
+
 @import './components/logo';
 @import './components/page-header';
 @import './components/nav-list';
 @import './components/feedback-list';
 @import './components/social-list';
+@import './components/menu-mobile';
+
+// ----------------------------------------Основні секції 
+
 @import './components/hero-section';
 @import './components/features-section';
 @import './components/benefits-section';
 @import './components/card-section';
 @import './components/clients-section';
+
+// ------------------------------------------------Футер
+
 @import './components/page-footer';
 @import './components/address-footer';
 @import './components/socials-footer';
 @import './components/footer-form';
+
+// -----------------------------------Сторінка "Портфоліо"
+
 @import './components/filter-list';
 @import './components/portfolio-list';
+
+// ----------------------------------------Модальне вікно
+
 @import './components/modal';
