@@ -1083,7 +1083,6 @@ h6 {
       flex-wrap: wrap;
   gap: 15px 8px;
   margin-bottom: 40px;
-  width: 80%;
 }
 @media screen and (min-width: 768px) {
   .filter-list {
@@ -1265,7 +1264,7 @@ h6 {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 100%;
+  width: calc(100% - 30px);
   max-width: 450px;
   height: auto;
   background-color: #ffffff;
@@ -1291,7 +1290,7 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 40px;
+  padding: 40px;
 }
 @media screen and (min-width: 1200px) {
   .modal__form {
@@ -1408,7 +1407,6 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  white-space: nowrap;
   margin-top: 20px;
   margin-bottom: 30px;
   font-size: 12px;
@@ -1434,7 +1432,6 @@ h6 {
 }
 
 .checkbox__link {
-  display: block;
   margin-left: 5px;
   color: rgb(33, 150, 243);
   text-decoration: underline;
