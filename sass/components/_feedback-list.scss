@@ -16,11 +16,11 @@
     gap: 50px;
   }
 }
-.feedback-items__item {
+.feedback-items__link.is-stylized {
   @media screen and (max-width: 767px) {
-    &:last-child {
-      color: $accent-color;
-    }
+    color: $accent-color;
+    font-size: 34px;
+    line-height: 1.17;
   }
 }
 .feedback-items__link {
@@ -32,8 +32,8 @@
   @include transition;
   @media screen and (max-width: 767px) {
     font-weight: 500;
-    font-size: 34px;
-    line-height: 1.17;
+    font-size: 24px;
+    line-height: 1.166;
     letter-spacing: 0.02em;
   }
   @include tablet {

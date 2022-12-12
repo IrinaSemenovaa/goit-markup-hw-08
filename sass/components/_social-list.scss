@@ -3,6 +3,7 @@
     display: none;
   }
   display: flex;
+  flex-wrap: wrap;
 }
 .social-list__item {
   &:nth-child(1) {

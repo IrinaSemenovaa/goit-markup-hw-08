@@ -118,6 +118,7 @@
 .checkbox {
   display: inline-flex;
   align-items: center;
+  white-space: nowrap;
   margin-top: 20px;
   margin-bottom: 30px;
 
@@ -146,6 +147,7 @@
 }
 .checkbox__icon {
   display: inline-block;
+  flex-shrink: 0;
   margin-right: 7px;
   border: 2px solid $form-icon-color;
   border-radius: 2px;
